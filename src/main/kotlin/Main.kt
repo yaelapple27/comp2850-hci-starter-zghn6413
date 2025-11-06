@@ -70,6 +70,9 @@ fun Application.configureLogging() {
  */
 fun Application.configureTemplating() {
     val pebbleEngine = PebbleEngine.Builder()
+        .loader(io.pebbletemplates.pebble.loader.ClasspathLoader().apply {
+            prefix = "templates/"
+        })
         .autoEscaping(true)      // XSS protection via auto-escaping
         .cacheActive(false)      // Disable cache in dev for hot reload
         .strictVariables(false)  // Allow undefined variables (fail gracefully)
