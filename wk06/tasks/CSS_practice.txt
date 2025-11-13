@@ -1,0 +1,25 @@
+#HTML
+<h1>Hello World</h1>
+<h2>Welcome to my website</h2>
+
+<p>This is a paragraph, which gives some <em>emphasis</em> and some
+<strong>strong emphasis</strong> to its text.</p>
+
+<p>In COMP2850, we will use the <a href="https://kotlinlang.org/">Kotlin
+programming language</a> to build applications.</p>
+
+#CSS
+body {
+    color: blue;
+    font-size: 1.4em;
+}
+
+#adjacent sibling
+p {
+  font-weight: bold;
+}
+p + p {
+  font-size: small;
+  font-weight: normal;
+  color: purple;
+}
